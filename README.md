@@ -1,3 +1,3 @@
 # sandman6094.github.io
 
-Sticky notes
+Sticky notes project for CS80.
