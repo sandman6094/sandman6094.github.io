@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sticky notes</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script type="text/javascript" src="./functions.js"></script>
+    <div class="container" id="container">
+        <div class="notes">
+            <textarea placeholder="Clover on to top left to change new a back ground; Note and pen on the top right to create a new note; Trash bin on the bottom left to delete a note; color patterns on the bottom right to change a color. "></textarea>
+            <input type="button" onclick="color_to_pink(this)" class="change_color_pink" value="█">
+            <input type="button" onclick="color_to_yellow(this)" class="change_color_yellow" value="█">
+            <input type="button" onclick="color_to_green(this)" class="change_color_green" value="█">
+            <input type="button" onclick="color_to_blue(this)" class="change_color_blue" value="█">
+            <input type="button" onclick="color_to_white(this)" class="change_color_white" value="█">
+            <input type="button" onclick="delete_note(this)" class="delete" value="🗑️">
+        </div>
+    </div>
+    <input type="button" onclick="new_bg_color()" value="☘️" id="change_background_color">
+    <input type="button" onclick="add_note()" value="📝" id="add_note">
+</body>
+</html>
